@@ -17,6 +17,7 @@ Before reading, editing, or generating any code:
 ## 3. Mandatory Hostile Review Gate
 - Before opening any Pull Request / Merge Request, you **MUST** invoke the `hostile-reviewer` subagent (defined in [`.agents/agents/hostile-reviewer.md`](.agents/agents/hostile-reviewer.md)) against your diff and linked spec.
 - A PR cannot be opened until `hostile-reviewer` returns **`VERDICT: PASS`** across all 6 pillars.
+- Never append Co-Authored-By trailers or AI attribution footers to git commits or PR descriptions.
 
 ## 4. Persistent Memory & Dead-End Ledger
 - Whenever you encounter a non-obvious bug, environmental quirk, or failed approach, record it immediately in the **Dead-End Ledger** inside [`.agents/memory.md`](.agents/memory.md).
