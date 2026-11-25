@@ -7,6 +7,15 @@
 
 ---
 
+## Risk Profile (Auto-Evaluated by Agent)
+*Agent Instruction: Automatically evaluate and pre-check all applicable boxes below when drafting a spec from this template so the developer only needs to review and approve.*
+
+- [ ] **Financial / Ledger:** Touches pricing, balances, tax, invoicing or monetary math
+- [ ] **Auth / Multi-Tenant:** Touches login, roles, permissions or tenant-scoped data
+- [ ] **Concurrency / Async:** Touches queues, webhooks, background jobs or retries
+
+---
+
 ## 1. Problem
 Briefly state the business or operational problem being solved, who is affected, and the measurable outcome.
 

@@ -7,6 +7,15 @@
 
 ---
 
+## Risk Profile (Auto-Evaluated by Agent)
+*Agent Instruction: Automatically evaluate and pre-check all applicable boxes below when drafting a spec from this template so the developer only needs to review and approve.*
+
+- [x] **Financial / Ledger:** Touches pricing, balances, tax, invoicing or monetary math
+- [x] **Auth / Multi-Tenant:** Touches login, roles, permissions or tenant-scoped data
+- [ ] **Concurrency / Async:** Touches queues, webhooks, background jobs or retries
+
+---
+
 ## 1. Problem
 Multi-tenant retail shops on the E&M platform need a reliable API endpoint to record point-of-sale transactions in Ugandan Shillings (UGX). Every sale must be strictly isolated to the authenticated shop tenant and computed with exact arithmetic so end-of-day cash reconciliation never drifts.
 

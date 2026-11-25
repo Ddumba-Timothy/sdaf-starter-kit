@@ -12,6 +12,7 @@ Before reading, editing, or generating any code:
 ## 2. Spec-First Law (Zero Vibe Coding)
 - **No implementation code without an approved specification** in `docs/specs/`.
 - Every new feature or bugfix starts by copying [`docs/specs/SPEC_TEMPLATE.md`](docs/specs/SPEC_TEMPLATE.md) into `docs/specs/<TICKET-ID>-<short-name>.md`.
+- When drafting a new spec from `SPEC_TEMPLATE.md`, automatically evaluate and pre-check the applicable Risk Profile boxes based on the feature scope so the developer only needs to review and approve.
 - If a requested change contradicts or extends beyond the linked spec, **stop and ask** before writing code.
 
 ## 3. Mandatory Hostile Review Gate
