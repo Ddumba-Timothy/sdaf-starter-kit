@@ -32,17 +32,15 @@ Open your coding agent (Antigravity, Claude Code, Cursor, or GitHub Copilot) and
 ```text
 You are onboarding this repository to E&M Technology House Uganda's Spec-Driven Agentic Engineering Framework (SDAF v1.0).
 
-Do NOT modify any application source code or tests yet. Execute these 4 steps only:
+Do NOT modify any application source code or tests yet. Execute these 5 steps only:
 
-1. Inspect the repository layout, dependency manifests (requirements.txt, pyproject.toml, pom.xml, package.json), CI config, and existing test setup.
-2. Fill in `.agents/SKILL.md` with the exact Tech Stack, Directory Rules, Security Guardrails, and working Test/Lint Commands for this repository.
-3. Initialize `.agents/memory.md` with:
-   - The key existing architectural patterns (auth/tenant guard file path, response wrapper, critical financial/auth modules requiring 90% line / 85% branch coverage).
+1. Harness Setup (Idempotent): Check if `AGENTS.md`, `.agents/`, `.github/pull_request_template.md` and `docs/specs/SPEC_TEMPLATE.md` already exist in this repository. If any are missing, fetch them from `https://github.com/Ddumba-Timothy/sdaf-starter-kit` (ignore the `/demo` folder and do not overwrite existing custom files).
+2. Repository Audit: Inspect the repository layout, dependency manifests (`requirements.txt`, `pyproject.toml`, `pom.xml`, `package.json`), CI config and existing test setup.
+3. Populate `.agents/SKILL.md`: Fill in the exact Tech Stack, Directory Rules, concrete Security Guardrails (no generic fluff) and working Test/Lint Commands. Verify every test/lint command actually runs cleanly in this environment before writing it down.
+4. Initialize `.agents/memory.md`: Document:
+   - Key existing architectural patterns (auth/tenant guard file path, response wrapper and critical financial/auth modules requiring 90% line / 85% branch coverage).
    - The current baseline test coverage if a test suite exists (to lock the Coverage Ratchet floor).
-4. Report back with a 5-line readiness summary listing: (a) detected stack, (b) exact test command verified, (c) critical modules identified, and (d) any missing Tier 0 harness pieces (e.g., pre-commit hooks or CI coverage gate).
-```
-
----
+5. Report Back: Output a 5-line readiness summary listing: (a) detected stack, (b) exact test command verified, (c) critical modules identified, (d) baseline coverage floor and (e) any missing Tier 0 harness pieces (e.g., pre-commit hooks or CI coverage gate).
 
 ## The 5-Step SDAF Loop
 
