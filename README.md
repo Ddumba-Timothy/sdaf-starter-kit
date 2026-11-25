@@ -45,7 +45,18 @@ Do NOT modify any application source code or tests yet. Execute these 5 steps on
 ## The 5-Step SDAF Loop
 
 ```text
+
 [1. Spec] → [2. Plan + Hostile Review] → [3. Tests] → [4. Build + Memory] → [5. PR Gate]
+```
+**CLI One-Liners**
+Windows (Powershell);
+```text
+irm https://raw.githubusercontent.com/Ddumba-Timothy/sdaf-starter-kit/main/install.ps1 | iex
+```
+
+Mac/Linux;
+```text
+irm https://raw.githubusercontent.com/Ddumba-Timothy/sdaf-starter-kit/main/install.ps1 | iex
 ```
 
 | Gate | Requirement |
