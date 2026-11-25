@@ -56,7 +56,7 @@ irm https://raw.githubusercontent.com/Ddumba-Timothy/sdaf-starter-kit/main/insta
 
 Mac/Linux;
 ```text
-irm https://raw.githubusercontent.com/Ddumba-Timothy/sdaf-starter-kit/main/install.ps1 | iex
+curl -sL https://raw.githubusercontent.com/Ddumba-Timothy/sdaf-starter-kit/main/install.sh | bash
 ```
 
 | Gate | Requirement |
